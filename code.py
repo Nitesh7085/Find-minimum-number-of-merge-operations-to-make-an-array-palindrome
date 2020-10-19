@@ -1,8 +1,7 @@
 
-def findMinOps(arr, n): 
+def findMinOps(arr): 
 	ans = 0 # Initialize result 
-
- 
+	n = len(arr)
 	i,j = 0,n-1
 	while i<=j: 
 
@@ -26,8 +25,9 @@ def findMinOps(arr, n):
 
 
 
-arr = [1, 4, 5, 9, 1] 
-n = len(arr) 
-print("Count of minimum operations is " + str(findMinOps(arr, n))) 
+arr = [int(i) for i in input().split()]
+# arr = [1, 4, 5, 9, 1] 
+# n = len(arr) 
+print("Count of minimum operations is " + str(findMinOps(arr))) 
 
 
